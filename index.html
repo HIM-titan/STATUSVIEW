@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE DREADED ARMY</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+  <div class="container">
+    <h1>THE DREADED ARMY</h1>
+    <p class="subtitle">Upload your WhatsApp name and number. VCF will unlock when uploads hit target.</p>
+
+    <form id="vcfForm">
+      <input type="text" id="name" placeholder="Your WhatsApp Name" required />
+      <input type="tel" id="number" placeholder="Your Whatsapp Number ,eg +234911XXXXXX" required />
+      <button type="submit">Upload</button>
+    </form>
+
+    <p class="count">Uploaded Contacts: <span id="count">0</span></p>
+    <button id="downloadBtn" class="btn" style="display: none;">📥 Download VCF File</button>
+
+    <div class="button-group">
+      <a href="https://whatsapp.com/channel/0029VbAaOJLInlqVwhwtxS33" target="_blank" class="btn">📢 Join WhatsApp Channel</a>
+      <a href="https://wa.me/2349117564724" target="_blank" class="btn">👑 Contact Owner</a>
+    </div>
+
+    <p class="footer">Developed by LEGION</p>
+  </div>
+<!-- Firebase core SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+<!-- Firebase Realtime Database -->
+<script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-database-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
